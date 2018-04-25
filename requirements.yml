@@ -2,7 +2,7 @@
 # Install required roles by all playbooks
 # GitHub private repos
 # redis role
-- src: git@github.com:rmachuca89/ansible-repo-percona.git
+- src: https://github.com/rmachuca89/ansible-repo-percona.git
   scm: git
   version: master
   name: repo-percona

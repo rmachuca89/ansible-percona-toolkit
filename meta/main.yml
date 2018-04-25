@@ -26,7 +26,7 @@ galaxy_info:
     - database
 
 dependencies:
-  - src: git@github.com:rmachuca89/ansible-repo-percona.git
+  - src: https://github.com/rmachuca89/ansible-repo-percona.git
     scm: git
     version: master
     name: repo-percona
