@@ -1,0 +1,32 @@
+---
+galaxy_info:
+  author: Rodrigo Machuca
+  description: Role to setup Percona Toolkit
+
+  license: Apache 2.0
+
+  min_ansible_version: 2.4
+
+  platforms:
+
+    - name: EL
+      versions:
+        - 6
+        - 7
+
+    - name: Ubuntu
+      versions:
+        - xenial
+        - trusty
+
+  galaxy_tags:
+    - percona
+    - toolkit
+    - percona_toolkit
+    - database
+
+dependencies:
+  - src: git@github.com:rmachuca89/ansible-repo-percona.git
+    scm: git
+    version: master
+    name: repo-percona

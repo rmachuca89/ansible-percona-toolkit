@@ -1,0 +1,12 @@
+---
+# tasks file for ansible-percona-toolkit
+# Sources:
+# https://www.percona.com/doc/percona-toolkit/LATEST/installation.html
+
+- name: Install Percona Toolkit package (yum)
+  import_tasks: setup_redhat.yml
+  when: ansible_os_family == 'RedHat'
+
+- name: Install Percona Toolkit package (apt)
+  import_tasks: setup_debian.yml
+  when: ansible_os_family == 'Debian'

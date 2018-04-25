@@ -1,0 +1,9 @@
+---
+# file: tasks/setup_redhat.yml
+#
+# Task file to setup the Percona Toolkit from Percona repository.
+
+- name: Install the Percona Toolkit
+  yum:
+    name: "{{ percona_toolkit_package_name }}"
+    state: present

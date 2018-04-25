@@ -1,0 +1,3 @@
+---
+# file: vars/main.yml
+percona_toolkit_package_name: "percona-toolkit"

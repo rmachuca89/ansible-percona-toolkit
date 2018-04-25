@@ -1,0 +1,11 @@
+---
+# file: tasks/setup_debian.yml
+#
+# Task file to setup the Percona apt repository.
+
+- name: Add the Percona Toolkit package
+  apt:
+    name: "{{ percona_toolkit_package_name }}"
+    state: present
+    update_cache: "yes"
+    cache_valid_time: 3600
